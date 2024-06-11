@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salon Sense</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Salon Sense</title>
 </head>
-<body>
-    <header>
-        <div class="menu">Menu</div>
-        <div class="search">Search</div>
-    </header>
-    <div class="intro">
-        <h1>生み出せる。<br>育てることが。<br>人は変える。</h1>
-        <p>サロンで人生を変える物語を描いたコンテンツ。</p>
-    </div>
-    <section class="profile">
-        <h2>Profile.</h2>
-        <div class="profile-details">
-            <img src="profile.jpg" alt="Daisuke">
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-black p-4">
+        <div class="flex items-center justify-between">
+            <div class="text-white">
+                <a href="#" class="text-xl font-bold">LOVE</a>
+            </div>
             <div>
-                <h3>Daisuke</h3>
-                <p>人生を変えるスタイリング</p>
-                <p>スタイリングNo.1</p>
-                <p>年間顧客数: 8000</p>
-                <p>年間指名率: 100%</p>
-                <p>年間売り上げ成長率: 年平均 5%</p>
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white ml-4">Gift</a>
+                <a href="#" class="text-gray-300 hover:text-white ml-4">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center p-8">
+        <h1 class="text-3xl font-bold">人を美しくする。</h1>
+        <p class="mt-4 text-lg">
+            "人生を変える仕事"に対しての情熱で、
+            <br>私たちは美容に携わる全ての人々に、
+            <br>希望という形で影響を与え続けます。
+        </p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="p-8">
+        <h2 class="text-2xl font-bold mb-4">Profile</h2>
+        <div class="flex flex-col items-center">
+            <img src="https://placehold.jp/30/0066dd/ffffff/150x150.png?text=dummy" alt="Daisuke"
+                class="rounded-full w-48 h-48 mb-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold">Daisuke</h3>
+                <p class="text-gray-400">美容師 / スタイリスト</p>
+                <p>年間3000人以上のお客様に新しいスタイルを提供し続けています。</p>
             </div>
         </div>
     </section>
-    <section class="transformations">
-        <h2>Before & After</h2>
-        <div class="case">
-            <img src="before1.jpg" alt="Before">
-            <img src="after1.jpg" alt="After">
-            <p>Case1: 20代後半男性 / 6month</p>
-        </div>
-        <div class="case">
-            <img src="before2.jpg" alt="Before">
-            <img src="after2.jpg" alt="After">
-            <p>Case2: 20代前半男性 / 3month</p>
+
+    <!-- Before After Gallery -->
+    <section class="p-8">
+        <h2 class="text-2xl font-bold mb-4">Before → After</h2>
+        <div>
+            <p>
+                Case1: 20代後半男性 / 6month
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://placehold.jp/30/0066dd/ffffff/150x150.png?text=dummy" alt="Before" class="">
+                <img src="https://placehold.jp/30/dd6699/ffffff/150x150.png?text=dummy" alt="After" class="">
+            </div>
+            <br>
+            <p>
+                Case2: 20代後半男性 / 3month
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://placehold.jp/30/0066dd/ffffff/150x150.png?text=dummy" alt="Before" class="">
+                <img src="https://placehold.jp/30/dd6699/ffffff/150x150.png?text=dummy" alt="After" class="">
+            </div>
         </div>
     </section>
-    <footer>
-        <p>© Salon Sense. All rights reserved.</p>
-    </footer>
+
 </body>
+
 </html>
